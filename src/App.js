@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import ListContacts from './ListContacts';
 
 
@@ -24,14 +24,12 @@ const contacts = [
   }
 ]
 
-class App extends Component {
-    render() {
-      return (
-        <div>
-          <ListContacts contacts={contacts}/>
-        </div>
-      );
-    }
+function App(props) {
+  return (
+    <div>
+      <ListContacts contacts={contacts}/>
+    </div>
+  );
 }
 
 export default App;
